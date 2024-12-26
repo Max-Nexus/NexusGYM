@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/CSS/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/CSS/global.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                fundo: '#D9D9D9',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <header class="bg-black w-full h-28 items-center p-4 flex lg:justify-between">
+        <div class="w-1/3 lg:hidden"></div>
+        <div class="text-white w-1/3 flex justify-center lg:w-auto">
+            <div>LOGO</div>
+        </div>
+        <div class="hidden h-10 lg:flex justify-end p-4 items-center w-3/6" id="searchbar">
+            <div>lupa</div>
+        </div>
+        <div class="hidden lg:flex gap-3 items-center" id="User-nav">
+            <div class="text-white">
+                UserIcon
+            </div>
+            <div class="text-white">
+                Cadastre seu Usuário ou faça Login
+            </div>
+        </div>
+        <div class="text-white hidden lg:block">
+            Car
+        </div>
+        <div class="text-white w-1/3 flex justify-end lg:hidden">
+            <div>LOGO1</div>
+        </div>
+    </header>
+
+    <div class="flex flex-col items-center gap-10">
+        <div id="banner">
+            Banner aqui
+        </div>
+        <hr class="w-5/6 border-4 rounded-full border-black">
+        <div id="quem-somos">
+            Banner aqui
+        </div>
+        <hr class="w-5/6 border-4 rounded-full border-black">
+        <div class="flex items-center flex-col gap-8 pt-8">
+            <div class="flex items-center flex-col w-5/6 gap-8">
+                <h2>
+                    Nossos Espaços
+                </h2>
+                <p>
+                    Na Nexus, oferecemos uma experiência completa de bem-estar. Nossa piscina é perfeita para treinos aquáticos e relaxamento, com água na temperatura ideal. Após os exercícios, nosso spa oferece massagens terapêuticas e tratamentos exclusivos para renovação das energias. E para recuperação muscular, nossa sauna proporciona alívio do estresse e melhora da circulação. Cada espaço foi projetado para equilibrar performance, relaxamento e cuidados especiais, atendendo todas as suas necessidades de saúde e bem-estar.
+                </p>
+            </div>
+            <div class="w-5/6 rounded-3xl bg-black lg:h-96 h-auto gap-5" id="cards">
+                Bolinhas aqui
+            </div>
+        </div>
+        <hr class="w-5/6 border-4 rounded-full border-black">
+        <div class="flex items-center flex-col gap-8 w-full bg-black pt-8 pb-8">
+            <div class="flex items-center flex-col w-5/6 gap-8 text-white">
+                <h2>
+                    Nossos Aparelhos
+                </h2>
+                <p>
+                    Nossos aparelhos são desenvolvidos com tecnologia de ponta e materiais de alta qualidade, nossos equipamentos atendem às mais diversas necessidades, desde o treino de força e resistência até exercícios cardiovasculares. Cada aparelho é pensado para otimizar sua performance, garantindo conforto, durabilidade e resultados reais.
+                </p>
+            </div>
+            <div class="lg:w-full h-96 bg-white w-9/12 flex-col lg:flex-row">
+                Bolinhas aqui tambem
+            </div>
+            <button class="bg-white rounded-lg w-40 h-8">Confira Já</button>
+        </div>
+        <hr class="w-5/6 border-4 rounded-full border-black">
+        <div class="flex items-center flex-col gap-8 pt-8">
+            <div class="flex items-center flex-col w-5/6 gap-8">
+                <h2>
+                    Nossos Personais
+                </h2>
+                <p>
+                    Contamos com uma equipe de professores dedicados a ajudá-lo a alcançar seus objetivos. Com vasta experiência em treinamento de força, nutrição esportiva e estratégias de performance, eles combinam conhecimento técnico e prática para trazer as melhores orientações. Cada um deles é uma inspiração no mundo fitness, oferecendo dicas valiosas e motivação para que você conquiste resultados reais com consistência e dedicação.
+                </p>
+            </div>
+            <div class="w-5/6 rounded-3xl bg-black lg:h-96 h-auto gap-5 flex-col lg:flex-row" id="">
+                Bolinhas aqui
+            </div>
+            <button class="bg-black rounded-lg w-40 h-8 text-white">Confira Já</button>
+        </div>
+        <hr class="w-5/6 border-4 rounded-full border-black">
+        <div class="flex items-center flex-col gap-8 w-full bg-black pt-8 pb-8">
+            <div class="flex items-center flex-col w-5/6 gap-8 text-white">
+                <h2>
+                    Nossa Loja
+                </h2>
+                <p>
+                    Nossa loja combina o melhor dos mundos fitness: roupas de academia e suplementos de alta qualidade. Aqui, você encontra peças confortáveis e estilosas, feitas para acompanhar seus treinos com liberdade de movimento e durabilidade, além de suplementos cuidadosamente selecionados para potencializar seus resultados. Seja para se sentir bem enquanto treina ou para dar aquele boost na sua performance, estamos prontos para oferecer tudo o que você precisa para alcançar seus objetivos com estilo e saúde.
+                </p>
+            </div>
+            <div class="w-5/6 rounded-3xl h-96 bg-white flex-col lg:flex-row">
+                Bolinhas aqui tambem
+            </div>
+            <button class="bg-white rounded-lg w-40 h-8">Confira Já</button>
+        </div>
+        <div class="flex items-center flex-col gap-8 w-full">
+            <div>
+                <h1 class="text-2xl lg:text-5xl">Tipos de Planos</h1>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-8 lg:w-2/3 lg:justify-around">
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <div class="w-56 lg:w-64 bg-red-500 h-96 rounded-xl flex flex-col" id="assinaturas">
+                        <div class="flex flex-col items-center p-4 text-white">
+                            <h1 class="text-xl">Diária</h1>
+                            <h1 class="text-5xl">R$44,90</h1>
+                            <h1 class="text-base">à vista</h1>
+                        </div>
+                        <div class="w-full bg-fundo h-full p-4 rounded-b-lg">
+                            <p class="text-sm lg:text-base">acesso à área de musculação;</p>
+                            <p class="text-sm lg:text-base">acesso à área de cardio;</p>
+                            <p class="text-sm lg:text-base">acesso à área de lazer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <div class="w-56 lg:w-64 bg-red-500 h-96 rounded-xl flex flex-col" id="assinaturas">
+                        <div class="flex flex-col items-center p-4 text-white">
+                            <h1 class="text-xl">Mensal</h1>
+                            <h1 class="text-5xl">R$449,90</h1>
+                            <h1 class="text-base">à vista</h1>
+                        </div>
+                        <div class="w-full bg-fundo h-full p-4 rounded-b-lg">
+                            <p class="text-sm lg:text-base">acesso à área de musculação;</p>
+                            <p class="text-sm lg:text-base">acesso à área de cardio;</p>
+                            <p class="text-sm lg:text-base">acesso à área de lazer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <div class="w-56 lg:w-64 bg-red-500 h-96 rounded-xl flex flex-col" id="assinaturas">
+                        <div class="flex flex-col items-center p-4 text-white">
+                            <h1 class="text-xl">Anual</h1>
+                            <h1 class="text-5xl">R$3.800</h1>
+                            <h1 class="text-base">à vista</h1>
+                        </div>
+                        <div class="w-full bg-fundo h-full p-4 rounded-b-lg">
+                            <p class="text-sm lg:text-base">acesso à área de musculação;</p>
+                            <p class="text-sm lg:text-base">acesso à área de cardio;</p>
+                            <p class="text-sm lg:text-base">acesso à área de lazer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
