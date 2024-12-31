@@ -8,29 +8,59 @@
     <link rel="stylesheet" href="/src/CSS/carrinho.css">
 </head>
 <body>
-        <header class="bg-black w-full h-28 items-center p-4 flex lg:justify-between">
-        <div class="w-1/3 lg:hidden"></div>
-        <div class="text-white w-1/3 flex justify-center lg:w-auto">
-            <div>LOGO</div>
-        </div>
-        <div class="hidden h-10 lg:flex justify-end p-4 items-center w-3/6" id="searchbar">
-            <div>lupa</div>
-        </div>
-        <div class="hidden lg:flex gap-3 items-center" id="User-nav">
-            <div class="text-white">
-                UserIcon
+      
+        <div class="container">
+            <div class="carrinho">
+              <div class="produtos">
+                <div class="cabecalho">
+                  <div class="col-produto">PRODUTO</div>
+                  <div class="col-preco">PREÇO</div>
+                  <div class="col-quanr">QUANTIDADE</div>
+                  <div class="col-total">TOTAL</div>
+                </div>
+                <div class="item">
+                  <div class="produto-info">
+                    <img src="/assets/Desktop/Loja/MoletomRoxo.png" alt="Produto-Moletom-Nexus">
+                    <div>
+                      <p>Moletom Nexus - Coleção NexusCold</p>
+                      <p class="cor-produto">Cor: Roxo</p>
+                    </div>
+                  </div>
+                  <div class="preco">R$100,00</div>
+                  <div class="quantidade">
+                    <button>-</button>
+                    <input type="tel" value="1">
+                    <button>+</button>
+                  </div>
+                  <div class="total">R$100,00</div>
+                </div>
+              </div>
+              <div class="entrega-cupom">
+                <div>
+                  <label for="entrega">ENTREGA</label>
+                  <br><br>
+                  <input id="entrega" type="text">
+                  <button>Calcular</button>
+                </div>
+                <div>
+                  <label for="cupom">CUPOM DE DESCONTO</label>
+                  <br><br>
+                  <input id="cupom" type="text">
+                  <button>Aplicar</button>
+                </div>
+              </div>
             </div>
-            <div class="text-white">
-                Cadastre seu Usuário ou faça Login
+            <div class="resumo">
+              <h3>RESUMO DO PEDIDO</h3>
+              <div class="resumo-info">
+                <p>SUBTOTAL <span>R$100,00</span></p>
+                <p>ENTREGA <span>R$15,00</span></p>
+                <p class="total">TOTAL <span>R$115,00</span></p>
+              </div>
+              <button class="add-produto">Adicionar mais produtos</button>
+              <button class="fechar-pedido">FECHAR PEDIDO</button>
             </div>
-        </div>
-        <div class="text-white hidden lg:block">
-            Car
-        </div>
-        <div class="text-white w-1/3 flex justify-end lg:hidden">
-            <div>LOGO1</div>
-        </div>
-    </header>
- 
+          </div>
+          
 </body>
 </html>
