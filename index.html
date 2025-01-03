@@ -6,13 +6,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="src/CSS/global.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="src/CSS/global.css">
+    <link rel="stylesheet" href="src/CSS/home.css">
     <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
                 fundo: '#D9D9D9',
+                fundo2: '#000000',
+                navbar: '#404040',
               }
             }
           }
@@ -20,37 +22,67 @@
       </script>
 </head>
 <body>
-    <header class="bg-black w-full h-28 items-center p-4 flex lg:justify-between">
-        <div class="w-1/3 lg:hidden"></div>
-        <div class="text-white w-1/3 flex justify-center lg:w-auto">
-            <div>LOGO</div>
-        </div>
-        <div class="hidden h-10 lg:flex justify-end p-4 items-center w-3/6" id="searchbar">
-            <div>lupa</div>
-        </div>
-        <div class="hidden lg:flex gap-3 items-center" id="User-nav">
-            <div class="text-white">
-                UserIcon
+    <header class="flex flex-col items-center">
+        <div class="bg-black w-full h-28 items-center p-4 flex justify-between">
+            <div class="w-1/3 lg:hidden"></div>
+            <div class="flex justify-center lg:w-auto">
+                <img src="assets/Logo/Logocp.png" alt="" class="w-64 h-auto lg:w-40 justify-self-center">
             </div>
-            <div class="text-white">
-                Cadastre seu Usuário ou faça Login
+            <div class="hidden h-10 lg:flex justify-end p-4 items-center w-3/6" id="searchbar">
+                <div><img src="assets/Icones/Lupa.png" alt=""></div>
+            </div>
+            <div class="hidden lg:flex gap-3 items-center" id="User-nav">
+                <img src="assets/Icones/Usuário.png" alt="">
+                <!-- <div class="w-12 bg-white rounded-full">
+                    <img src="assets/Icones/User.png" alt="">
+                </div> -->
+                <div class="text-white">
+                    <h1>Cadastre seu Usuário ou faça Login</h1>
+                </div>
+            </div>
+            <div class="text-white hidden lg:block w-9">
+                <img src="assets/Icones/Carrinho.png" alt="">
+            </div>
+            <div class="text-white w-1/3 flex justify-end lg:hidden">
+                <div>
+                    <img src="assets/Icones/Menu.png" alt="">
+                </div>
             </div>
         </div>
-        <div class="text-white hidden lg:block">
-            Car
-        </div>
-        <div class="text-white w-1/3 flex justify-end lg:hidden">
-            <div>LOGO1</div>
-        </div>
+        <nav class="hidden lg:flex bg-navbar w-full h-10 justify-center items-center">
+            <ul class="flex justify-around w-full text-white">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Aparelhos</a></li>
+                <li><a href="#">Personais</a></li>
+                <li><a href="#">Loja</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Devs</a></li>
+            </ul>
+
+        </nav>
     </header>
 
     <div class="flex flex-col items-center gap-10">
-        <div id="banner">
-            Banner aqui
+        <div id="slider-desktop" class="bg-black w-full overflow-hidden">
+
+            <input type="radio" name="radio-btn-desktop" id="radio1">
+            <input type="radio" name="radio-btn-desktop" id="radio2">
+
+            <div id="slides-desktop" class="overflow-hidden flex justify-start">
+                <div id="" class="slide-desktop primeiro">
+                    <img src="assets/Desktop/Banners/BannerBlackFriday .png" alt="" class="hidden lg:block">
+                    <img src="assets/Mobile/Banners/BannerBlackFRIDAYMobile.png" alt="" class="lg:hidden">
+                </div>
+                <div id="" class="slide-desktop">
+                    <img src="assets/Desktop/Banners/BannerNexusRUN.png" alt="" class="hidden lg:block">
+                    <img src="assets/Mobile/Banners/BannerNexusRunMobile.png" alt="" class="lg:hidden">
+                </div>
+            </div>
         </div>
         <hr class="w-5/6 border-4 rounded-full border-black">
-        <div id="quem-somos">
-            Banner aqui
+        <div id="quem-somos" class="flex justify-center w-full">
+            <img src="assets/Desktop/Banners/BannerQuemSomos.png" alt="" class=" hidden lg:w-2/3 lg:block">
+            <img src="assets/Mobile/Banners/BannerQuemSomosMobile.png" alt="" class="lg:hidden w-full">
         </div>
         <hr class="w-5/6 border-4 rounded-full border-black">
         <div class="flex items-center flex-col gap-8 pt-8">
@@ -62,8 +94,16 @@
                     Na Nexus, oferecemos uma experiência completa de bem-estar. Nossa piscina é perfeita para treinos aquáticos e relaxamento, com água na temperatura ideal. Após os exercícios, nosso spa oferece massagens terapêuticas e tratamentos exclusivos para renovação das energias. E para recuperação muscular, nossa sauna proporciona alívio do estresse e melhora da circulação. Cada espaço foi projetado para equilibrar performance, relaxamento e cuidados especiais, atendendo todas as suas necessidades de saúde e bem-estar.
                 </p>
             </div>
-            <div class="w-5/6 rounded-3xl bg-black lg:h-96 h-auto gap-5" id="cards">
-                Bolinhas aqui
+            <div class="w-5/6 rounded-3xl bg-black lg:h-96 h-auto gap-5 items-center flex flex-col lg:flex-row lg:justify-around p-8" id="cards">
+                <div class="rounded-full">
+                    <img src="assets/Desktop/Home/Nossos Imagens/Piscina.png" alt="" class="">
+                </div>
+                <div class="rounded-full">
+                    <img src="assets/Desktop/Home/Nossos Imagens/Sauna.png" alt="" class="">
+                </div>
+                <div class="rounded-full">
+                    <img src="assets/Desktop/Home/Nossos Imagens/Spa.png" alt="" class="">
+                </div>
             </div>
         </div>
         <hr class="w-5/6 border-4 rounded-full border-black">
@@ -76,8 +116,16 @@
                     Nossos aparelhos são desenvolvidos com tecnologia de ponta e materiais de alta qualidade, nossos equipamentos atendem às mais diversas necessidades, desde o treino de força e resistência até exercícios cardiovasculares. Cada aparelho é pensado para otimizar sua performance, garantindo conforto, durabilidade e resultados reais.
                 </p>
             </div>
-            <div class="lg:w-full h-96 bg-white w-9/12 flex-col lg:flex-row">
-                Bolinhas aqui tambem
+            <div class="flex lg:w-full p-8 bg-white w-9/12 flex-col lg:flex-row justify-around gap-8">
+                <div class="">
+                    <img src="assets/Desktop/Home/Nossos Aparelhos/Equipamento 1.png" alt="" class="">
+                </div>
+                <div class="">
+                    <img src="assets/Desktop/Home/Nossos Aparelhos/Equipamento 2.png" alt="" class="">
+                </div>
+                <div class="">
+                    <img src="assets/Desktop/Home/Nossos Aparelhos/Equipamento 3.png" alt="" class="">
+                </div>
             </div>
             <button class="bg-white rounded-lg w-40 h-8">Confira Já</button>
         </div>
@@ -91,8 +139,16 @@
                     Contamos com uma equipe de professores dedicados a ajudá-lo a alcançar seus objetivos. Com vasta experiência em treinamento de força, nutrição esportiva e estratégias de performance, eles combinam conhecimento técnico e prática para trazer as melhores orientações. Cada um deles é uma inspiração no mundo fitness, oferecendo dicas valiosas e motivação para que você conquiste resultados reais com consistência e dedicação.
                 </p>
             </div>
-            <div class="w-5/6 rounded-3xl bg-black lg:h-96 h-auto gap-5 flex-col lg:flex-row" id="">
-                Bolinhas aqui
+            <div class="flex w-5/6 rounded-3xl bg-black h-auto gap-8 flex-col lg:flex-row justify-around items-center p-8" id="">
+                <div class="rounded-full border-4 border-white">
+                    <img src="assets/Desktop/Home/Nossos Personais/Carlão.png" alt="" class="">
+                </div>
+                <div class="rounded-full border-4 border-white">
+                    <img src="assets/Desktop/Home/Nossos Personais/Renato Cariani.png" alt="" class="">
+                </div>
+                <div class="rounded-full border-4 border-white">
+                    <img src="assets/Desktop/Home/Nossos Personais/Toguro.png" alt="" class="">
+                </div>
             </div>
             <button class="bg-black rounded-lg w-40 h-8 text-white">Confira Já</button>
         </div>
@@ -106,16 +162,24 @@
                     Nossa loja combina o melhor dos mundos fitness: roupas de academia e suplementos de alta qualidade. Aqui, você encontra peças confortáveis e estilosas, feitas para acompanhar seus treinos com liberdade de movimento e durabilidade, além de suplementos cuidadosamente selecionados para potencializar seus resultados. Seja para se sentir bem enquanto treina ou para dar aquele boost na sua performance, estamos prontos para oferecer tudo o que você precisa para alcançar seus objetivos com estilo e saúde.
                 </p>
             </div>
-            <div class="w-5/6 rounded-3xl h-96 bg-white flex-col lg:flex-row">
-                Bolinhas aqui tambem
+            <div class="flex w-5/6 rounded-3xl p-8 bg-white flex-col lg:flex-row justify-around">
+                <div class="rounded-xl border-2 border-black">
+                    <img src="assets/Desktop/Home/Nossa Loja/Moletom Nexus Marrom.png" alt="">
+                </div>
+                <div class="rounded-xl border-2 border-black">
+                    <img src="assets/Desktop/Home/Nossa Loja/Moletom Roxo.png" alt="">
+                </div>
+                <div class="rounded-xl border-2 border-black">
+                    <img src="assets/Desktop/Home/Nossa Loja/Whey Nexus.png" alt="">
+                </div>
             </div>
             <button class="bg-white rounded-lg w-40 h-8">Confira Já</button>
         </div>
-        <div class="flex items-center flex-col gap-8 w-full">
+        <div class="flex items-center flex-col gap-8 w-full p-8">
             <div>
                 <h1 class="text-2xl lg:text-5xl">Tipos de Planos</h1>
             </div>
-            <div class="flex flex-col lg:flex-row gap-8 lg:w-2/3 lg:justify-around">
+            <div class="flex flex-col lg:flex-row gap-8 w-auto lg:justify-around">
                 <div class="flex flex-col lg:flex-row gap-8">
                     <div class="w-56 lg:w-64 bg-red-500 h-96 rounded-xl flex flex-col" id="assinaturas">
                         <div class="flex flex-col items-center p-4 text-white">
@@ -123,7 +187,7 @@
                             <h1 class="text-5xl">R$44,90</h1>
                             <h1 class="text-base">à vista</h1>
                         </div>
-                        <div class="w-full bg-fundo h-full p-4 rounded-b-lg">
+                        <div class="w-full bg-fundo2 h-full p-4 rounded-b-lg text-white">
                             <p class="text-sm lg:text-base">acesso à área de musculação;</p>
                             <p class="text-sm lg:text-base">acesso à área de cardio;</p>
                             <p class="text-sm lg:text-base">acesso à área de lazer.</p>
@@ -161,5 +225,43 @@
             </div>
         </div>
     </div>
+
+    <footer class="flex flex-col bg-black text-white items-center gap-8 p-8">
+        <div class="flex-row justify-around w-full hidden lg:flex">
+            <div class="w-1/4">
+                <h1 class="font-bold">Sobre Nós</h1>
+                <p>Endereço: Rua do Desafio, nº 1234, Bairro IronPeak, Fortia - Estado de Força</p>
+            </div>
+            <div class="w-1/4">
+                <h1 class="font-bold">Contato</h1>
+                <p>(31) 91234-5678</p>
+                <p>academianexus@nexusfit.com</p>
+            </div>
+            <div class="w-1/4">
+                <h1 class="font-bold">Informações</h1>
+                <p>Home</p>
+                <p>Aparelhos</p>
+                <p>Personais</p>
+                <p>Loja</p>
+                <p>Eventos</p>
+                <p>Carrinho</p>
+                <p>Usuário</p>
+                <p>Devs</p>
+            </div>
+        </div>
+        <div class="flex flex-col md:w-1/4 justify-center items-center w-2/3">
+            <div>
+                <img src="assets/Logo/Logocp.png" alt="">
+            </div>
+            <div class="flex w-2/4 justify-center gap-2">
+                <img src="assets/Icones/Instagram.svg" alt="" class="w-1/4 fill-white stroke-white">
+                <img src="assets/Icones/Phone.svg" alt="" class="w-1/4">
+                <img src="assets/Icones/Mail.svg" alt="" class="w-1/4">
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/Js/home.js"></script>
+
 </body>
 </html>

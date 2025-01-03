@@ -1,0 +1,26 @@
+#slides-desktop{
+    width: 200%;
+    height: auto;
+    transition: 2s;
+}
+
+.slide-desktop{
+    width: 100%;
+    position: relative;
+}
+
+.slide-desktop img{
+    width: 100%;
+    height: auto;
+}
+
+#slider-desktop input{
+    display: none;
+}
+
+#radio1:checked ~ #slides-desktop {
+    transform: translateX(0%);
+}
+#radio2:checked ~ #slides-desktop {
+    transform: translateX(-50%);
+}
