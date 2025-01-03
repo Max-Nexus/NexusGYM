@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nossos Personais - Nexus Gym</title>
-    <link rel="stylesheet" href="src/CSS/global.css">
-    <link rel="stylesheet" href="src/CSS/personais.css">
+    <link rel="stylesheet" href="/src/CSS/global.css">
+    <link rel="stylesheet" href="/src/CSS/personais.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="src/CSS/global.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="/src/CSS/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         fundo: '#D9D9D9',
+                        fundo2: '#000000',
+                        navbar: '#404040',
                     },
                     fontFamily: {
                         poppins: ['Poppins', 'sans-serif'],
@@ -26,75 +27,127 @@
         };
     </script>
 
+    <style>
+        body {
+            margin: 0px;
+        }
+    </style>
 
 </head>
-<header class="bg-black w-full bg-black w-full h-28 items-center p-4 flex lg:justify-between">
-    <div class="w-1/3 lg:hidden"></div>
-    <div class="text-white w-1/3 flex justify-center lg:w-auto">
-        <div>LOGO</div>
-    </div>
-    <div class="hidden h-10 lg:flex justify-end p-4 items-center w-3/6" id="searchbar">
-        <div>lupa</div>
-    </div>
-    <div class="hidden lg:flex gap-3 items-center" id="User-nav">
-        <div class="text-white">
-            UserIcon
+<body>
+    <header class="flex flex-col items-center">
+        <div class="bg-black w-full h-28 items-center p-4 flex justify-between">
+            <div class="w-1/3 lg:hidden"></div>
+            <div class="flex justify-center lg:w-auto">
+                <img src="/assets/Logo/Logocp.png" alt="" class="w-64 h-auto lg:w-40 justify-self-center">
+            </div>
+            <div class="hidden h-10 lg:flex justify-end p-4 items-center w-3/6" id="searchbar">
+                <div><img src="/assets/Icones/Lupa.png" alt=""></div>
+            </div>
+            <div class="hidden lg:flex gap-3 items-center" id="User-nav">
+                <a href="/src/Html/usuario.html" >
+                    <img src="/assets/Icones/Usuário.png" alt="" class="w-20">
+                </a>
+                <div class="text-white">
+                    <h1>Cadastre seu Usuário ou faça Login</h1>
+                </div>
+            </div>
+            <div class="text-white hidden lg:block w-9">
+                <img src="/assets/Icones/Carrinho.png" alt="">
+            </div>
+            <div class="text-white w-1/3 flex justify-end lg:hidden">
+                <div>
+                    <img src="/assets/Icones/Menu.png" alt="">
+                </div>
+            </div>
         </div>
-        <div class="text-white">
-            Cadastre seu Usuário ou faça Login
+        <nav class="hidden lg:flex bg-navbar w-full h-10 justify-center items-center">
+            <ul class="flex justify-around w-full text-white">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/src/Html/aparelhos.html">Aparelhos</a></li>
+                <li><a href="/src/Html/personais.html">Personais</a></li>
+                <li><a href="/src/Html/loja.html">Loja</a></li>
+                <li><a href="/src/Html/eventos.html">Eventos</a></li>
+                <li><a href="/src/Html/devs.html">Devs</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="font-poppins">
+        <div class="py-12">
+            <h2 class="text-5xl font-bold text-center mb-8">Nossos Personais</h2>
+            <div class="flex flex-col space-y-8 w-full lg:px-20 ">
+                <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-10">
+                    <div class="rounded-full border-4 border-black overflow-hidden w-360 h-360 lg:w-360 lg:h-360 mx-40 ">
+                    <img src="/assets/Desktop/Personais/Renato Cariani.png" alt="Renato Cariani">
+                    </div>
+                    <div class="bg-gray-200 p-6 rounded-lg shadow-md w-5/6 lg:w-2/3">
+                        <h3 class="font-bold text-3xl flex lg:text-3xl text-center lg:text-left py-4">Renato Cariani</h3>
+                        <p class="text-2xl py-6 ">
+                            Um personal trainer qualificado que orienta os alunos em seus treinos, elaborando planos
+                            personalizados para atender objetivos específicos, como ganho de massa muscular, emagrecimento
+                            ou melhora na qualidade de vida.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row items-center mx-40  ">
+                    <img src="/assets/Desktop/Personais/Carlão.png" alt="Carlão Personal"
+                        class="w-340 h-340 rounded-full border-4 border-black">
+                    <div class="bg-gray-200 p-4 rounded-lg shadow-md mx-20 my-20 w-894 h-357">
+                        <h3 class="font-bold text-3xl display flex justify-center items-center py-4">Carlão Personal</h3>
+                        <p class="text-2xl py-6 ">
+                            Carlão é o personal ideal para quem busca resultados reais com acompanhamento personalizado. Com sua experiência pelo fitness, ele está aqui para criar treinos adaptados às suas necessidades e objetivos. 
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row items-center mx-40  ">
+                    <img src="/assets/Desktop/Personais/Toguro.png" alt="Toguro"
+                        class="w-340 h-340 rounded-full border-4 border-black">
+                    <div class="bg-gray-200 p-4 rounded-lg shadow-md mx-20 my-20 w-894 h-357">
+                        <h3 class="font-bold text-3xl display flex justify-center items-center py-4">Toguro</h3>
+                        <p class="text-2xl py-6 ">
+                            Toguro traz uma combinação de conhecimento técnico e entusiasmo para seus treinos. Ele trabalha lado a lado com você, ajustando cada detalhe do plano de exercícios para atender suas metas de forma segura e eficaz. 
+                        </p>
+                    </div>
+                </div>
+    
+            </div>
         </div>
     </div>
-    <div class="text-white hidden lg:block">
-        Car
-    </div>
-    <div class="text-white w-1/3 flex justify-end lg:hidden">
-        <div>LOGO1</div>
-    </div>
-</header>
-<style>
-    body {
-        margin: 0px;
-    }
-</style>
 
-<div class="font-poppins">
-    <div class="py-12">
-        <h2 class="text-5xl font-bold text-center mb-8">Nossos Personais</h2>
-        <div class="flex flex-col space-y-8 w-full lg:px-20 ">
-            <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-10">
-                <div class="rounded-full border-4 border-black overflow-hidden w-360 h-360 lg:w-360 lg:h-360 mx-40 ">
-                <img src="assets/Desktop/Personais/RenatoCariani.png" alt="Renato Cariani">
-                </div>
-                <div class="bg-gray-200 p-6 rounded-lg shadow-md w-5/6 lg:w-2/3">
-                    <h3 class="font-bold text-3xl flex lg:text-3xl text-center lg:text-left py-4">Renato Cariani</h3>
-                    <p class="text-2xl py-6 ">
-                        Um personal trainer qualificado que orienta os alunos em seus treinos, elaborando planos
-                        personalizados para atender objetivos específicos, como ganho de massa muscular, emagrecimento
-                        ou melhora na qualidade de vida.
-                    </p>
-                </div>
+    <footer class="flex flex-col bg-black text-white items-center gap-8 p-8">
+        <div class="flex-row justify-around w-full hidden lg:flex">
+            <div class="w-1/4">
+                <h1 class="font-bold">Sobre Nós</h1>
+                <p>Endereço: Rua do Desafio, nº 1234, Bairro IronPeak, Fortia - Estado de Força</p>
             </div>
-            <div class="flex flex-col lg:flex-row items-center mx-40  ">
-                <img src="assets/Desktop/Personais/Carlão.png" alt="Carlão Personal"
-                    class="w-340 h-340 rounded-full border-4 border-black">
-                <div class="bg-gray-200 p-4 rounded-lg shadow-md mx-20 my-20 w-894 h-357">
-                    <h3 class="font-bold text-3xl display flex justify-center items-center py-4">Carlão Personal</h3>
-                    <p class="text-2xl py-6 ">
-                        Carlão é o personal ideal para quem busca resultados reais com acompanhamento personalizado. Com sua experiência pelo fitness, ele está aqui para criar treinos adaptados às suas necessidades e objetivos. 
-                    </p>
-                </div>
+            <div class="w-1/4">
+                <h1 class="font-bold">Contato</h1>
+                <p>(31) 91234-5678</p>
+                <p>academianexus@nexusfit.com</p>
             </div>
-            <div class="flex flex-col lg:flex-row items-center mx-40  ">
-                <img src="assets/Desktop/Personais/Toguro.png" alt="Toguro"
-                    class="w-340 h-340 rounded-full border-4 border-black">
-                <div class="bg-gray-200 p-4 rounded-lg shadow-md mx-20 my-20 w-894 h-357">
-                    <h3 class="font-bold text-3xl display flex justify-center items-center py-4">Toguro</h3>
-                    <p class="text-2xl py-6 ">
-                        Toguro traz uma combinação de conhecimento técnico e entusiasmo para seus treinos. Ele trabalha lado a lado com você, ajustando cada detalhe do plano de exercícios para atender suas metas de forma segura e eficaz. 
-                    </p>
-                </div>
+            <div class="w-1/4">
+                <h1 class="font-bold">Informações</h1>
+                <a href="index.html"><p>Home</p></a>
+                <a href="/src/Html/aparelhos.html"><p>Aparelhos</p></a>
+                <a href="/src/Html/personais.html"><p>Personais</p></a>
+                <a href="/src/Html/loja.html"><p>Loja</p></a>
+                <a href="/src/Html/eventos.html"><p>Eventos</p></a>
+                <a href="/src/Html/carrinho.html"><p>Carrinho</p></a>
+                <a href="/src/Html/usuario.html"><p>Usuário</p></a>
+                <a href="/src/Html/devs.html"><p>Devs</p></a>
             </div>
-
         </div>
-    </div>
-</div>
+        <div class="flex flex-col md:w-1/4 justify-center items-center w-2/3">
+            <div>
+                <img src="assets/Logo/Logocp.png" alt="">
+            </div>
+            <div class="flex w-2/4 justify-center gap-2">
+                <img src="assets/Icones/Instagram.svg" alt="" class="w-1/4 fill-white stroke-white">
+                <img src="assets/Icones/Phone.svg" alt="" class="w-1/4">
+                <img src="assets/Icones/Mail.svg" alt="" class="w-1/4">
+            </div>
+        </div>
+    </footer>
+
+</body>
