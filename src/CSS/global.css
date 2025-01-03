@@ -1,4 +1,6 @@
-@import url(/NexusGYM/src/Components/footer.css);
+@import url(/src/Components/footer.css);
+@import url(/src/Components/header.css);
+
 *{
     margin: 0;
     padding: 0;
