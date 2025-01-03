@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url(/NexusGYM/src/Components/footer.css);
 *{
     margin: 0;
@@ -6,7 +7,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: white;
     
 }
@@ -20,9 +21,9 @@ body {
 }
 
 .img-produto img{
-    margin-left: 20px;
-    width: 380px;
-    height: 450px;
+    margin: 30px 0px 30px 50px;
+    width: 450px;
+    height: 400px;
 }
 
 .info {
@@ -30,7 +31,7 @@ body {
     flex-direction: column;
     gap: 20px;
     flex: 1;
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 .titulo h2 {
@@ -124,6 +125,12 @@ body {
     transform: scale(1.2);
 }
 
+.tamanho-produto button.active {
+    border: 3px solid  #9900FF;
+
+
+}
+
 .button-add-cart {
     width: 365px;
     background-color: #9900FF;
@@ -146,7 +153,7 @@ body {
 .descricao {
     width: 60%;
     margin: 20px auto;
-    line-height: 1.6;
+    line-height: 2;
     
 }
 
@@ -162,5 +169,76 @@ body {
     margin-left: 10px;
 }
 
+@media (max-width: 768px) {
 
-    
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .img-produto img {
+        margin: 20px 0;
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .info {
+        margin-left: 0;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .titulo h2 {
+        font-size: 24px;
+    }
+
+    .titulo p {
+        font-size: 20px;
+    }
+
+    .estrela img {
+        width: 120px;
+    }
+
+    .avaliacao {
+        font-size: 14px;
+    }
+
+    .cor-produto {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .tamanho-produto {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .tamanho-produto button {
+        width: 50px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .button-add-cart {
+        width: 90%;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .descricao {
+        width: 90%;
+        line-height: 1.8;
+    }
+
+    .descricao h3 {
+        font-size: 20px;
+    }
+
+    .descricao p {
+        font-size: 16px;
+    }
+}
