@@ -5,15 +5,15 @@ document.addEventListener("DOMContentLoaded", function() {
     const btnPreto = document.querySelector(".cor-produto .preto");
 
     btnBranco.addEventListener("click", function() {
-        imgProduto.src = "/assets/Desktop/Loja/Moletombranco-loja2.png";
+        imgProduto.src = "../../assets/Desktop/Loja/Moletombranco-loja2.png";
     });
 
     btnRoxo.addEventListener("click", function() {
-        imgProduto.src = "/assets/Desktop/Loja/MoletomRoxo-loja2.png";
+        imgProduto.src = "../../assets/Desktop/Loja/MoletomRoxo-loja2.png";
     });
 
     btnPreto.addEventListener("click", function() {
-        imgProduto.src = "/assets/Desktop/Loja/MoletomNexcold-loja2.png";
+        imgProduto.src = "../../assets/Desktop/Loja/MoletomNexcold-loja2.png";
     });
 });
 

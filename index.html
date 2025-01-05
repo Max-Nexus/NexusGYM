@@ -24,7 +24,21 @@
 <body>
     <header class="flex flex-col items-center">
         <div class="bg-black w-full h-28 items-center p-4 flex justify-between">
-            <div class="w-1/3 lg:hidden"></div>
+            <div class="text-white w-1/3 flex justify-start lg:hidden">
+                <div>
+                    <img src="assets/Icones/Menu.png" alt="" class="drop-btn">
+                    <div class="dropdown-content lg:hidden absolute bg-black text-white w-full">
+                        <div class="flex flex-col gap-8 font-bold mt-4 p-4">
+                            <a href="index.html">Home</a>
+                            <a href="src/Html/aparelhos.html">Aparelhos</a>
+                            <a href="src/Html/personais.html">Personais</a>
+                            <a href="src/Html/loja.html">Loja</a>
+                            <a href="src/Html/eventos.html">Eventos</a>
+                            <a href="src/Html/devs.html">Devs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="flex justify-center lg:w-auto">
                 <img src="assets/Logo/Logocp.png" alt="" class="w-64 h-auto lg:w-40 justify-self-center">
             </div>
@@ -32,7 +46,7 @@
                 <div><img src="assets/Icones/Lupa.png" alt=""></div>
             </div>
             <div class="hidden lg:flex gap-3 items-center" id="User-nav">
-                <a href="usuario.html" >
+                <a href="src/Html/usuario.html" >
                     <img src="assets/Icones/Usuário.png" alt="" class="w-20">
                 </a>
                 <div class="text-white">
@@ -40,12 +54,14 @@
                 </div>
             </div>
             <div class="text-white hidden lg:block w-9">
-                <img src="assets/Icones/Carrinho.png" alt="">
+                <a href="src/Html/carrinho.html">
+                    <img src="assets/Icones/Carrinho.png" alt="">
+                </a>
             </div>
             <div class="text-white w-1/3 flex justify-end lg:hidden">
-                <div>
-                    <img src="assets/Icones/Menu.png" alt="">
-                </div>
+                <a href="src/Html/carrinho.html">
+                    <img src="assets/Icones/Carrinho.png" alt="">
+                </a>
             </div>
         </div>
         <nav class="hidden lg:flex bg-navbar w-full h-10 justify-center items-center">
@@ -265,6 +281,6 @@
     </footer>
 
     <script src="src/Js/home.js"></script>
-
+    <script src="src/Js/global.js"></script>
 </body>
 </html>

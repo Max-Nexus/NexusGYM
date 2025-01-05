@@ -7,3 +7,13 @@
 #User-nav{
     width: 230px;
 }
+
+.dropdown-content{
+    display: none;
+    height: 400px;
+    z-index: 1;
+    margin-left: -16px;
+    border-top: 2px solid white;
+    margin-top: 27px;
+    padding: 10px;
+}

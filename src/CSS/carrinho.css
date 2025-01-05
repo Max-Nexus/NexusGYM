@@ -1,194 +1,229 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: white;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 30px auto;
-    gap: 30px;
-  }
-  
-  .carrinho {
-    width: 70%;
-  }
-  
-  .produtos {
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .cabecalho, .item {
-    display: grid;
-    grid-template-columns: 3fr 2fr 2fr 2fr;
-    align-items: center;
-    padding: 15px;
-    text-align: center;
-  }
-  
-  .cabecalho {
-    background-color: #eaeaea;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  .item {
-    border-top: 1px solid #ccc;
-  }
-  
-  .produto-info {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  .produto-info img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-  }
-  
-  .produto-info div p {
-    margin: 3px 0;
-  }
 
-  .cor-produto {
-    font-size: 15px;
-    padding-top: 10px;
-  }
-  
-  .quantidade {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-  }
-  
-  .quantidade button {
-    margin: 5px;
-    padding: 8px 10px;
-  }
-  
-  .quantidade input {
-    margin: 5px;
-    padding: 8px;
-    width: 40px;
-    text-align: center;
-  }
-  
-  .entrega-cupom {
-    display: flex;
+main {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+}
+
+input[type="text"],
+input[type="tel"] {
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  outline: none;
+  width: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  border: 1px solid #000000;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #eaeaea;
+  border-color: #000000;
+}
+
+.quantidade button {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  padding: 0;
+}
+
+.entrega-cupom button {
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tudo-loja {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 30px auto;
+  gap: 30px;
+}
+
+.carrinho-loja {
+  width: 70%;
+}
+
+.produtos-loja {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cabecalho-loja, .item-loja {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 2fr;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+}
+
+.cabecalho-loja {
+  background-color: #eaeaea;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.item-loja {
+  border-top: 1px solid #ccc;
+}
+
+.produto-info-loja {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.produto-info-loja img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.produto-info-loja div p {
+  margin: 3px 0;
+}
+
+.cor-produto-loja {
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.quantidade-loja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.quantidade-loja button {
+  margin: 5px;
+  padding: 8px 10px;
+}
+
+.quantidade-loja input {
+  margin: 5px;
+  padding: 8px;
+  width: 40px;
+  text-align: center;
+}
+
+.entrega-cupom-loja {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px;
+}
+
+.entrega-cupom-loja label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.entrega-cupom-loja input {
+  padding: 8px;
+  width: calc(30% - 10px);
+}
+
+.entrega-cupom-loja button {
+  padding: 8px 12px;
+  margin-left: 5px;
+}
+
+.resumo-loja {
+  width: 30%;
+  background-color: #eaeaea;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.resumo-loja h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: solid 2px black;
+}
+
+.resumo-info-loja p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 16px;
+  padding-bottom: 10px;
+  border-bottom: solid 2px rgb(158, 158, 158);
+}
+
+.resumo-info-loja .total-loja {
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.resumo-loja button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.resumo-loja button.add-produto-loja {
+  background-color: rgb(158, 158, 158, 0.4);
+  font-weight: bold;
+}
+
+.resumo-loja button.fechar-pedido-loja {
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .tudo-loja {
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
   }
-  
-  .entrega-cupom label {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  
-  .entrega-cupom input {
-    padding: 8px;
-    width: calc(30% - 10px);
-  }
-  
-  .entrega-cupom button {
-    padding: 8px 12px;
-    margin-left: 5px;
-  }
-  
-  .resumo {
-    width: 30%;
-    background-color: #eaeaea;
-    padding: 25px;
-    border-radius: 8px;
-  }
-  
-  .resumo h3 {
-    text-align: center;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: solid 2px black;
-  }
-  
-  .resumo-info p {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    font-size: 16px;
-    padding-bottom: 10px;
-    border-bottom: solid 2px rgb(158, 158, 158);
-  }
-  
-  .resumo-info .total {
-    font-weight: bold;
-    margin-top: 15px;
-    font-size: 18px;
-  }
-  
-  .resumo button {
+
+  .carrinho-loja, .resumo-loja {
     width: 100%;
-    padding: 12px;
-    margin-top: 15px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
   }
 
-  .resumo button.add-produto {
-    background-color: rgb(158, 158, 158, 0.4);
-    font-weight: bold;
+  .cabecalho-loja, .item-loja {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    font-size: 14px;
   }
-  
-  .resumo button.fechar-pedido {
-    background-color: #28a745;
-    color: white;
-    font-weight: bold;
-  }
-  
-  @media (max-width: 768px) {
-    
-    .container {
-      flex-direction: column; 
-      gap: 20px;
-    }
-  
-    .carrinho, .resumo {
-      width: 100%;
-    }
-  
-    .cabecalho, .item {
-      grid-template-columns: 2fr 1fr 1fr 1fr; 
-      font-size: 14px;
-    }
-  
-    .produto-info img {
-      width: 80px;
-      height: 80px;
-    }
-  
-    .entrega-cupom {
-      padding: 15px; 
-      gap: 20px; 
-    }
 
-    .entrega-cupom input {
-      width: calc(60% - 10px); 
-    }
-  
-    .resumo-info p {
-      font-size: 14px;
-    }
-  
+  .produto-info-loja img {
+    width: 80px;
+    height: 80px;
   }
+
+  .entrega-cupom-loja {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .entrega-cupom-loja input {
+    width: calc(60% - 10px);
+  }
+
+  .resumo-info-loja p {
+    font-size: 14px;
+  }
+}
