@@ -9,7 +9,7 @@ setInterval(() => {
 
 function Carrosel() {
     count++;
-    const totalRadios = 2; 
+    const totalRadios = 3; 
 
     if (count > totalRadios) {
         count = 1;
