@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos - Nexus Gym</title>
-    <link rel="stylesheet" href="/src/CSS/global.css">
-    <link rel="stylesheet" href="/src/CSS/eventos.css">
+    <link rel="stylesheet" href="../../src/CSS/global.css">
+    <link rel="stylesheet" href="../../src/CSS/eventos.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/src/CSS/global.css">
+    <link rel="stylesheet" href="../../src/CSS/global.css">
     <script>
         tailwind.config = {
             theme: {
@@ -25,39 +25,39 @@
 </head>
 <header class="flex flex-col items-center">
     <div class="bg-black w-full h-28 items-center p-4 flex justify-between">
-        <div class="w-1/3 lg:hidden"></div>
-        <div class="flex justify-center lg:w-auto">
-            <img src="/assets/Logo/Logocp.png" alt="" class="w-64 h-auto lg:w-40 justify-self-center">
+      <div class="w-1/3 lg:hidden"></div>
+      <div class="flex justify-center lg:w-auto">
+        <img src="../../assets/Icones/Logocp.png" alt="" class="w-64 h-auto lg:w-40 justify-self-center">
+      </div>
+      <div class="hidden h-10 lg:flex justify-end p-4 items-center w-3/6" id="searchbar">
+        <div><img src="../../assets/Icones/Lupa.png" alt=""></div>
+      </div>
+      <div class="hidden lg:flex gap-3 items-center" id="User-nav">
+        <a href="usuario.html">
+          <img src="../../assets/Icones/Usuário.png" alt="" class="w-20">
+        </a>
+        <div class="text-white">
+          <h1>Cadastre seu Usuário ou faça Login</h1>
         </div>
-        <div class="hidden h-10 lg:flex justify-end p-4 items-center w-3/6" id="searchbar">
-            <div><img src="/assets/Icones/Lupa.png" alt=""></div>
+      </div>
+      <div class="text-white hidden lg:block w-9">
+        <img src="../../assets/Icones/Carrinho.png" alt="">
+      </div>
+      <div class="text-white w-1/3 flex justify-end lg:hidden">
+        <div>
+          <img src="../../assets/Icones/Menu.png" alt="">
         </div>
-        <div class="hidden lg:flex gap-3 items-center" id="User-nav">
-            <a href="/src/Html/usuario.html" >
-                <img src="/assets/Icones/Usuário.png" alt="" class="w-20">
-            </a>
-            <div class="text-white">
-                <h1>Cadastre seu Usuário ou faça Login</h1>
-            </div>
-        </div>
-        <div class="text-white hidden lg:block w-9">
-            <img src="/assets/Icones/Carrinho.png" alt="">
-        </div>
-        <div class="text-white w-1/3 flex justify-end lg:hidden">
-            <div>
-                <img src="/assets/Icones/Menu.png" alt="">
-            </div>
-        </div>
+      </div>
     </div>
     <nav class="hidden lg:flex bg-navbar w-full h-10 justify-center items-center">
-        <ul class="flex justify-around w-full text-white">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="src/Html/aparelhos.html">Aparelhos</a></li>
-            <li><a href="src/Html/personais.html">Personais</a></li>
-            <li><a href="src/Html/loja.html">Loja</a></li>
-            <li><a href="src/Html/eventos.html">Eventos</a></li>
-            <li><a href="src/Html/devs.html">Devs</a></li>
-        </ul>
+      <ul class="flex justify-around w-full text-white">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="aparelhos.html">Aparelhos</a></li>
+        <li><a href="personais.html">Personais</a></li>
+        <li><a href="loja.html">Loja</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="devs.html">Devs</a></li>
+      </ul>
     </nav>
 </header>
     <style>
