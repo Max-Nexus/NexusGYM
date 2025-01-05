@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loja</title>
-  <link rel="stylesheet" href="../../src/CSS/global.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            fundo: '#D9D9D9',
-            fundo2: '#000000',
-            navbar: '#404040',
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <link rel="stylesheet" href="../../src/CSS/global.css">
+    <link rel="stylesheet" href="../../src/CSS/loja.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                fundo: '#D9D9D9',
+                fundo2: '#000000',
+                navbar: '#404040',
+              }
+            }
           }
         }
-      }
-    }
-  </script>
+    </script>
 </head>
-
 <body>
   <header class="flex flex-col items-center">
     <div class="bg-black w-full h-28 items-center p-4 flex justify-between">
@@ -77,57 +76,101 @@
     </nav>
   </header>
 
+    <div class="tudo-produto">
+        <div class="produtos">
+            <a href="../../src/Html/loja-2.html"><img src="../../assets/Desktop/Loja-produtos/MoletomNexcold.png" alt="Moletom Nexus Preto"></a>
+            <h3>Moletom Nexus - Coleção Nexcold</h3>
+            <span>R$ 250,00</span>
+        </div>
+        <div class="produtos">
+            <img src="../../assets/Desktop/Loja-produtos/Camisa NexusFit  - Preta.png" alt="Camisa Nexus Preta">
+            <h3>Camisa NexusFit - Preta</h3>
+            <span>R$ 69,99</span>
+        </div>
+        <div class="produtos">
+            <img src="../../assets/Desktop/Loja-produtos/CamisaEdiçãoEspecial.png" alt="Camisa Nexus Branca">
+            <h3>Camisa NexusFit - Versão Especial</h3>
+            <span>R$ 69,99</span>
+        </div>
+        <div class="produtos">
+            <img src="../../assets/Desktop/Loja-produtos/Creatina.png" alt="Creatina Monohidratada">
+            <h3>Creatina Monohidratada - Nexus Academy</h3>
+            <span>R$ 70,00</span>
+        </div>
+        <div id="moletom-marrom" class="produtos">
+            <img src="../../assets/Desktop/Loja-produtos/MoletomNexusMarrom.png" alt="Moletom Nexus Marrom">
+            <h3>Moletom Nexus - Coleção Nexcold II</h3>
+            <span>R$ 250,00</span>
+        </div>
+        <div id="whey" class="produtos">
+            <img src="../../assets/Desktop/Loja-produtos/WheyNexus.png" alt="Whey Sabor Baunilha">
+            <h3>Whey Sabor Baunilha - Nexus Academy</h3>
+            <span>R$ 129,99</span>
+        </div>
+        <div id="betaalanina" class="produtos">
+            <img src="../../assets/Desktop/Loja-produtos/Betalanina.png" alt="Beta-Alanina">
+            <h3>Betalanina - Nexus Academy</h3>
+            <span>R$ 140,00</span>
+        </div>
+        <div id="termogenico" class="produtos">
+            <img src="../../assets/Desktop/Loja-produtos/TermogenicoNexus.png" alt="Termogênico">
+            <h3>Termogênico - Nexus Academy</h3>
+            <span>R$ 70,00</span>
+        </div>
+    </div>
 
-  <footer class="flex flex-col bg-black text-white items-center gap-8 p-8">
-    <div class="flex-row justify-around w-full hidden lg:flex">
-      <div class="w-1/4">
-        <h1 class="font-bold">Sobre Nós</h1>
-        <p>Endereço: Rua do Desafio, nº 1234, Bairro IronPeak, Fortia - Estado de Força</p>
-      </div>
-      <div class="w-1/4">
-        <h1 class="font-bold">Contato</h1>
-        <p>(31) 91234-5678</p>
-        <p>academianexus@nexusfit.com</p>
-      </div>
-      <div class="w-1/4">
-        <h1 class="font-bold">Informações</h1>
-        <a href="../../index.html">
-          <p>Home</p>
-        </a>
-        <a href="aparelhos.html">
-          <p>Aparelhos</p>
-        </a>
-        <a href="personais.html">
-          <p>Personais</p>
-        </a>
-        <a href="loja.html">
-          <p>Loja</p>
-        </a>
-        <a href="eventos.html">
-          <p>Eventos</p>
-        </a>
-        <a href="carrinho.html">
-          <p>Carrinho</p>
-        </a>
-        <a href="usuario.html">
-          <p>Usuário</p>
-        </a>
-        <a href="devs.html">
-          <p>Devs</p>
-        </a>
-      </div>
-    </div>
-    <div class="flex flex-col md:w-1/4 justify-center items-center w-2/3">
-      <div>
-        <img src="../../assets/Logo/Logocp.png" alt="">
-      </div>
-      <div class="flex w-2/4 justify-center gap-2">
-        <img src="../../assets/Icones/Instagram.svg" alt="" class="w-1/4 fill-white stroke-white">
-        <img src="../../assets/Icones/Phone.svg" alt="" class="w-1/4">
-        <img src="../../assets/Icones/Mail.svg" alt="" class="w-1/4">
-      </div>
-    </div>
-  </footer>
+    <footer class="flex flex-col bg-black text-white items-center gap-8 p-8">
+        <div class="flex-row justify-around w-full hidden lg:flex">
+          <div class="w-1/4">
+            <h1 class="font-bold">Sobre Nós</h1>
+            <p>Endereço: Rua do Desafio, nº 1234, Bairro IronPeak, Fortia - Estado de Força</p>
+          </div>
+          <div class="w-1/4">
+            <h1 class="font-bold">Contato</h1>
+            <p>(31) 91234-5678</p>
+            <p>academianexus@nexusfit.com</p>
+          </div>
+          <div class="w-1/4">
+            <h1 class="font-bold">Informações</h1>
+            <a href="../../index.html">
+              <p>Home</p>
+            </a>
+            <a href="aparelhos.html">
+              <p>Aparelhos</p>
+            </a>
+            <a href="personais.html">
+              <p>Personais</p>
+            </a>
+            <a href="loja.html">
+              <p>Loja</p>
+            </a>
+            <a href="eventos.html">
+              <p>Eventos</p>
+            </a>
+            <a href="carrinho.html">
+              <p>Carrinho</p>
+            </a>
+            <a href="usuario.html">
+              <p>Usuário</p>
+            </a>
+            <a href="devs.html">
+              <p>Devs</p>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col md:w-1/4 justify-center items-center w-2/3">
+          <div>
+            <img src="../../assets/Logo/Logocp.png" alt="">
+          </div>
+          <div class="flex w-2/4 justify-center gap-2">
+            <img src="../../assets/Icones/Instagram.svg" alt="" class="w-1/4 fill-white stroke-white">
+            <img src="../../assets/Icones/Phone.svg" alt="" class="w-1/4">
+            <img src="../../assets/Icones/Mail.svg" alt="" class="w-1/4">
+          </div>
+        </div>
+      </footer>
+
+      <script src="../Js/global.js"></script>
+
 </body>
-
 </html>
