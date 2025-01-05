@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.tudo-produto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.produtos {
+    position: relative;
+    text-align: center;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    margin-top: 75px;
+}
+
+#moletom-marrom, #whey, #betaalanina, #termogenico{
+    margin-bottom: 50px;
+}
+
+.produtos img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+.produtos h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.produtos span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6a1b9a;
+}
+
+@media (max-width: 1024px) {
+    .produtos {
+        flex: 1 1 calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .produtos {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .produtos {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
