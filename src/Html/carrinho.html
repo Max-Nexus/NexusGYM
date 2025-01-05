@@ -27,9 +27,23 @@
 
   <header class="flex flex-col items-center">
     <div class="bg-black w-full h-28 items-center p-4 flex justify-between">
-      <div class="w-1/3 lg:hidden"></div>
+      <div class="text-white w-1/3 flex justify-start lg:hidden">
+        <div>
+          <img src="../../assets/Icones/Menu.png" alt="" class="drop-btn">
+          <div class="dropdown-content lg:hidden absolute bg-black text-white w-full">
+            <div class="flex flex-col gap-8 font-bold">
+              <a href="../../index.html">Home</a>
+              <a href="aparelhos.html">Aparelhos</a>
+              <a href="personais.html">Personais</a>
+              <a href="loja.html">Loja</a>
+              <a href="eventos.html">Eventos</a>
+              <a href="devs.html">Devs</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="flex justify-center lg:w-auto">
-        <img src="../../assets/Icones/Logocp.png" alt="" class="w-64 h-auto lg:w-40 justify-self-center">
+        <img src="../../assets/Logo/Logocp.png" alt="" class="w-64 h-auto lg:w-40 justify-self-center">
       </div>
       <div class="hidden h-10 lg:flex justify-end p-4 items-center w-3/6" id="searchbar">
         <div><img src="../../assets/Icones/Lupa.png" alt=""></div>
@@ -43,12 +57,14 @@
         </div>
       </div>
       <div class="text-white hidden lg:block w-9">
-        <img src="../../assets/Icones/Carrinho.png" alt="">
+        <a href="../../src/Html/carrinho.html">
+          <img src="../../assets/Icones/Carrinho.png" alt="">
+        </a>
       </div>
       <div class="text-white w-1/3 flex justify-end lg:hidden">
-        <div>
-          <img src="../../assets/Icones/Menu.png" alt="">
-        </div>
+        <a href="src/Html/carrinho.html">
+          <img src="../../assets/Icones/Carrinho.png" alt="">
+        </a>
       </div>
     </div>
     <nav class="hidden lg:flex bg-navbar w-full h-10 justify-center items-center">
@@ -62,59 +78,61 @@
       </ul>
     </nav>
   </header>
-
-  <div class="container">
-    <div class="carrinho">
-      <div class="produtos">
-        <div class="cabecalho">
-          <div class="col-produto">PRODUTO</div>
-          <div class="col-preco">PREÇO</div>
-          <div class="col-quanr">QUANTIDADE</div>
-          <div class="col-total">TOTAL</div>
-        </div>
-        <div class="item">
-          <div class="produto-info">
-            <img src="../../assets/Desktop/Loja/MoletomRoxo.png" alt="Produto-Moletom-Nexus">
-            <div>
-              <p>Moletom Nexus - Coleção NexusCold</p>
-              <p class="cor-produto">Cor: Roxo</p>
+  <main>
+    <div class="tudo-loja">
+      <div class="carrinho-loja">
+        <div class="produtos-loja">
+          <div class="cabecalho-loja">
+            <div class="coluna-produto-loja">PRODUTO</div>
+            <div class="coluna-preco-loja">PREÇO</div>
+            <div class="coluna-quantidade-loja">QUANTIDADE</div>
+            <div class="coluna-total-loja">TOTAL</div>
+          </div>
+          <div class="item-loja">
+            <div class="produto-info-loja">
+              <img src="../../assets/Desktop/Loja/MoletomRoxo.png" alt="Produto-Moletom-Nexus">
+              <div>
+                <p>Moletom Nexus - Coleção NexusCold</p>
+                <p class="cor-produto-loja">Cor: Roxo</p>
+              </div>
             </div>
+            <div class="preco-loja">R$250,00</div>
+            <div class="quantidade-loja">
+              <button>-</button>
+              <input type="tel" value="1" id="quantidade">
+              <button>+</button>
+            </div>
+            <div class="total-loja">R$250,00</div>
           </div>
-          <div class="preco">R$100,00</div>
-          <div class="quantidade">
-            <button>-</button>
-            <input type="tel" value="1">
-            <button>+</button>
+        </div>
+        <div class="entrega-cupom-loja">
+          <div>
+            <label for="entrega">ENTREGA</label>
+            <br><br>
+            <input id="entrega" type="text">
+            <button>Calcular</button>
           </div>
-          <div class="total">R$100,00</div>
+          <div>
+            <label for="cupom">CUPOM DE DESCONTO</label>
+            <br><br>
+            <input id="cupom" type="text">
+            <button class="aplicar-cupom">Aplicar</button>
+          </div>
         </div>
       </div>
-      <div class="entrega-cupom">
-        <div>
-          <label for="entrega">ENTREGA</label>
-          <br><br>
-          <input id="entrega" type="text">
-          <button>Calcular</button>
+      <div class="resumo-loja">
+        <h3>RESUMO DO PEDIDO</h3>
+        <div class="resumo-info-loja">
+          <p>SUBTOTAL <span>R$250,00</span></p>
+          <p class="desconto">DESCONTO <span>R$00,00</span></p>
+          <p>ENTREGA <span>R$15,00</span></p>
+          <p class="total-loja">TOTAL <span>R$265,00</span></p>
         </div>
-        <div>
-          <label for="cupom">CUPOM DE DESCONTO</label>
-          <br><br>
-          <input id="cupom" type="text">
-          <button>Aplicar</button>
-        </div>
+        <button class="add-produto-loja">Adicionar mais produtos</button>
+        <button class="fechar-pedido-loja">FECHAR PEDIDO</button>
       </div>
     </div>
-    <div class="resumo">
-      <h3>RESUMO DO PEDIDO</h3>
-      <div class="resumo-info">
-        <p>SUBTOTAL <span>R$100,00</span></p>
-        <p>ENTREGA <span>R$15,00</span></p>
-        <p class="total">TOTAL <span>R$115,00</span></p>
-      </div>
-      <button class="add-produto">Adicionar mais produtos</button>
-      <button class="fechar-pedido">FECHAR PEDIDO</button>
-    </div>
-  </div>
+  </main>
 
   <footer class="flex flex-col bg-black text-white items-center gap-8 p-8">
     <div class="flex-row justify-around w-full hidden lg:flex">
@@ -168,6 +186,7 @@
   </footer>
 
   <script src="../../src/Js/carrinho.js"></script>
+  <script src="../Js/global.js"></script>
 </body>
 
 </html>

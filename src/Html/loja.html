@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja</title>
     <link rel="stylesheet" href="../../src/CSS/global.css">
-    <link rel="stylesheet" href="../../src/CSS/loja.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -24,90 +23,48 @@
 <body>
     <header class="flex flex-col items-center">
         <div class="bg-black w-full h-28 items-center p-4 flex justify-between">
-          <div class="w-1/3 lg:hidden"></div>
-          <div class="flex justify-center lg:w-auto">
-            <img src="../../assets/Logo/Logocp.png" alt="" class="w-64 h-auto lg:w-40 justify-self-center">
-          </div>
-          <div class="hidden h-10 lg:flex justify-end p-4 items-center w-3/6" id="searchbar">
-            <div><img src="../../assets/Icones/Lupa.png" alt=""></div>
-          </div>
-          <div class="hidden lg:flex gap-3 items-center" id="User-nav">
-            <a href="usuario.html">
-              <img src="../../assets/Icones/Usuário.png" alt="" class="w-20">
-            </a>
-            <div class="text-white">
-              <h1>Cadastre seu Usuário ou faça Login</h1>
+            <div class="w-1/3 lg:hidden"></div>
+            <div class="flex justify-center lg:w-auto">
+                <img src="../../assets/Logo/Logocp.png" alt="" class="w-64 h-auto lg:w-40 justify-self-center">
             </div>
-          </div>
-          <div class="text-white hidden lg:block w-9">
-            <img src="../../assets/Icones/Carrinho.png" alt="">
-          </div>
-          <div class="text-white w-1/3 flex justify-end lg:hidden">
-            <div>
-              <img src="../../assets/Icones/Menu.png" alt="">
+            <div class="hidden h-10 lg:flex justify-end p-4 items-center w-3/6" id="searchbar">
+                <div><img src="../../assets/Icones/Lupa.png" alt=""></div>
             </div>
-          </div>
+            <div class="hidden lg:flex gap-3 items-center" id="User-nav">
+                <a href="usuario.html" >
+                    <img src="../../assets/Icones/Usuário.png" alt="" class="w-20">
+                </a>
+                <div class="text-white">
+                    <h1>Cadastre seu Usuário ou faça Login</h1>
+                </div>
+            </div>
+            <div class="text-white hidden lg:block w-9">
+                <img src="../../assets/Icones/Carrinho.png" alt="">
+            </div>
+            <div class="text-white w-1/3 flex justify-end lg:hidden">
+                <div>
+                    <img src="../../assets/Icones/Menu.png" alt="">
+                </div>
+            </div>
         </div>
         <nav class="hidden lg:flex bg-navbar w-full h-10 justify-center items-center">
-          <ul class="flex justify-around w-full text-white">
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="aparelhos.html">Aparelhos</a></li>
-            <li><a href="personais.html">Personais</a></li>
-            <li><a href="loja.html">Loja</a></li>
-            <li><a href="eventos.html">Eventos</a></li>
-            <li><a href="devs.html">Devs</a></li>
-          </ul>
+            <ul class="flex justify-around w-full text-white">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="aparelhos.html">Aparelhos</a></li>
+                <li><a href="personais.html">Personais</a></li>
+                <li><a href="loja.html">Loja</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="devs.html">Devs</a></li>
+            </ul>
         </nav>
-      </header>
+    </header>
 
-    <div class="tudo-produto">
-        <div class="produtos">
-            <a href="../../src/Html/loja-2.html"><img src="../../assets/Desktop/Loja-produtos/MoletomNexcold.png" alt="Moletom Nexus Preto"></a>
-            <h3>Moletom Nexus - Coleção Nexcold</h3>
-            <span>R$ 250,00</span>
-        </div>
-        <div class="produtos">
-            <img src="../../assets/Desktop/Loja-produtos/Camisa NexusFit  - Preta.png" alt="Camisa Nexus Preta">
-            <h3>Camisa NexusFit - Preta</h3>
-            <span>R$ 69,99</span>
-        </div>
-        <div class="produtos">
-            <img src="../../assets/Desktop/Loja-produtos/CamisaEdiçãoEspecial.png" alt="Camisa Nexus Branca">
-            <h3>Camisa NexusFit - Versão Especial</h3>
-            <span>R$ 69,99</span>
-        </div>
-        <div class="produtos">
-            <img src="../../assets/Desktop/Loja-produtos/Creatina.png" alt="Creatina Monohidratada">
-            <h3>Creatina Monohidratada - Nexus Academy</h3>
-            <span>R$ 70,00</span>
-        </div>
-        <div id="moletom-marrom" class="produtos">
-            <img src="../../assets/Desktop/Loja-produtos/MoletomNexusMarrom.png" alt="Moletom Nexus Marrom">
-            <h3>Moletom Nexus - Coleção Nexcold II</h3>
-            <span>R$ 250,00</span>
-        </div>
-        <div id="whey" class="produtos">
-            <img src="../../assets/Desktop/Loja-produtos/WheyNexus.png" alt="Whey Sabor Baunilha">
-            <h3>Whey Sabor Baunilha - Nexus Academy</h3>
-            <span>R$ 129,99</span>
-        </div>
-        <div id="betaalanina" class="produtos">
-            <img src="../../assets/Desktop/Loja-produtos/Betalanina.png" alt="Beta-Alanina">
-            <h3>Betalanina - Nexus Academy</h3>
-            <span>R$ 140,00</span>
-        </div>
-        <div id="termogenico" class="produtos">
-            <img src="../../assets/Desktop/Loja-produtos/TermogenicoNexus.png" alt="Termogênico">
-            <h3>Termogênico - Nexus Academy</h3>
-            <span>R$ 70,00</span>
-        </div>
-    </div>
 
     <footer class="flex flex-col bg-black text-white items-center gap-8 p-8">
         <div class="flex-row justify-around w-full hidden lg:flex">
           <div class="w-1/4">
             <h1 class="font-bold">Sobre Nós</h1>
-            <p>Endereço: Rua do Desafio, nº 1234, Bairro IronPeak, Fortia - Estado de Força</p>
+            <p>Endereço: Rua do Desafio, nº 1234, Bairro IronPeak, Fortia - Estado de Força</p>
           </div>
           <div class="w-1/4">
             <h1 class="font-bold">Contato</h1>
@@ -152,7 +109,6 @@
             <img src="../../assets/Icones/Mail.svg" alt="" class="w-1/4">
           </div>
         </div>
-      </footer>
-
+    </footer>
 </body>
 </html>
