@@ -1,5 +1,5 @@
 main {
-    font-family: Arial, sans-serif;
+    font-weight: bold;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
@@ -18,7 +18,7 @@ main h1 {
     justify-content: center;
     flex-wrap: wrap;
     gap: 80px; 
-    padding: 0 20px;
+    padding: 20px;
 }
 
 .aparelhos-card {
