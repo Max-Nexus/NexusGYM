@@ -16,7 +16,11 @@
                 fundo: '#D9D9D9',
                 fundo2: '#000000',
                 navbar: '#404040',
-              }
+              },
+              fontFamily: {
+                        konkhmer: ['Konkhmer', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+              },
             }
           }
         }
@@ -29,7 +33,7 @@
                 <div>
                     <img src="assets/Icones/Menu.png" alt="" class="drop-btn">
                     <div class="dropdown-content lg:hidden absolute bg-black text-white w-full">
-                        <div class="flex flex-col gap-8 font-bold mt-4 p-4">
+                        <div class="flex flex-col gap-8 font-bold mt-4 p-4" id="links">
                             <a href="index.html">Home</a>
                             <a href="src/Html/aparelhos.html">Aparelhos</a>
                             <a href="src/Html/personais.html">Personais</a>
@@ -52,7 +56,7 @@
                     <img src="assets/Icones/Usuário.png" alt="" class="w-20">
                 </a>
                 <div class="text-white">
-                    <h1>Cadastre seu Usuário ou faça Login</h1>
+                    <h1>Cadastre-se ou faça Login</h1>
                 </div>
             </div>
             <div class="text-white hidden lg:block w-9">
@@ -106,12 +110,12 @@
             <img src="assets/Mobile/Banners/BannerQuemSomosMobile.png" alt="" class="lg:hidden w-full">
         </div>
         <hr class="w-5/6 border-4 rounded-full border-black">
-        <div class="flex items-center flex-col gap-8 pt-8">
+        <div class="flex items-center flex-col gap-8 pt-8 font-poppins">
             <div class="flex items-center flex-col w-5/6 gap-8">
-                <h2>
+                <h2 class="text-4xl font-bold">
                     Nossos Espaços
                 </h2>
-                <p>
+                <p class="font-semibold">
                     Na Nexus, oferecemos uma experiência completa de bem-estar. Nossa piscina é perfeita para treinos aquáticos e relaxamento, com água na temperatura ideal. Após os exercícios, nosso spa oferece massagens terapêuticas e tratamentos exclusivos para renovação das energias. E para recuperação muscular, nossa sauna proporciona alívio do estresse e melhora da circulação. Cada espaço foi projetado para equilibrar performance, relaxamento e cuidados especiais, atendendo todas as suas necessidades de saúde e bem-estar.
                 </p>
             </div>
@@ -128,9 +132,9 @@
             </div>
         </div>
         <hr class="w-5/6 border-4 rounded-full border-black">
-        <div class="flex items-center flex-col gap-8 w-full bg-black pt-8 pb-8">
+        <div class="flex items-center flex-col gap-8 w-full bg-black pt-8 pb-8 font-poppins">
             <div class="flex items-center flex-col w-5/6 gap-8 text-white">
-                <h2>
+                <h2 class="text-4xl font-bold">
                     Nossos Aparelhos
                 </h2>
                 <p>
@@ -151,12 +155,12 @@
             <button class="bg-white rounded-lg w-40 h-8">Confira Já</button>
         </div>
         <hr class="w-5/6 border-4 rounded-full border-black">
-        <div class="flex items-center flex-col gap-8 pt-8">
+        <div class="flex items-center flex-col gap-8 pt-8 font-poppins">
             <div class="flex items-center flex-col w-5/6 gap-8">
-                <h2>
+                <h2 class="text-4xl font-bold">
                     Nossos Personais
                 </h2>
-                <p>
+                <p class="font-semibold">
                     Contamos com uma equipe de professores dedicados a ajudá-lo a alcançar seus objetivos. Com vasta experiência em treinamento de força, nutrição esportiva e estratégias de performance, eles combinam conhecimento técnico e prática para trazer as melhores orientações. Cada um deles é uma inspiração no mundo fitness, oferecendo dicas valiosas e motivação para que você conquiste resultados reais com consistência e dedicação.
                 </p>
             </div>
@@ -174,21 +178,21 @@
             <button class="bg-black rounded-lg w-40 h-8 text-white">Confira Já</button>
         </div>
         <hr class="w-5/6 border-4 rounded-full border-black">
-        <div class="flex items-center flex-col gap-8 w-full bg-black pt-8 pb-8">
+        <div class="flex items-center flex-col gap-8 w-full bg-black pt-8 pb-8 font-poppins">
             <div class="flex items-center flex-col w-5/6 gap-8 text-white">
-                <h2>
+                <h2 class="text-4xl font-bold">
                     Nossa Loja
                 </h2>
                 <p>
                     Nossa loja combina o melhor dos mundos fitness: roupas de academia e suplementos de alta qualidade. Aqui, você encontra peças confortáveis e estilosas, feitas para acompanhar seus treinos com liberdade de movimento e durabilidade, além de suplementos cuidadosamente selecionados para potencializar seus resultados. Seja para se sentir bem enquanto treina ou para dar aquele boost na sua performance, estamos prontos para oferecer tudo o que você precisa para alcançar seus objetivos com estilo e saúde.
                 </p>
             </div>
-            <div class="flex w-5/6 rounded-3xl p-8 bg-white flex-col lg:flex-row justify-around">
-                <div class="rounded-xl border-2 border-black">
-                    <img src="assets/Desktop/Loja-produtos/MoletomNexusMarrom.png" alt="">
-                </div>
+            <div class="flex w-5/6 rounded-3xl p-8 gap-8 bg-white flex-col lg:flex-row items-center justify-around">
                 <div class="rounded-xl border-2 border-black">
                     <img src="assets/Desktop/Loja-produtos/MoletomNexcold.png" alt="">
+                </div>
+                <div class="rounded-xl border-2 border-black">
+                    <img src="assets/Desktop/Loja-produtos/CamisaEdiçãoEspecial.png" alt="">
                 </div>
                 <div class="rounded-xl border-2 border-black">
                     <img src="assets/Desktop/Loja-produtos/WheyNexus.png" alt="">
@@ -198,47 +202,71 @@
         </div>
         <div class="flex items-center flex-col gap-8 w-full p-8">
             <div>
-                <h1 class="text-2xl lg:text-5xl">Tipos de Planos</h1>
+                <h1 class="text-2xl lg:text-5xl font-poppins font-bold">Tipos de Planos</h1>
             </div>
-            <div class="flex flex-col lg:flex-row gap-8 w-auto lg:justify-around">
-                <div class="flex flex-col lg:flex-row gap-8">
-                    <div class="w-56 lg:w-64 bg-red-500 h-96 rounded-xl flex flex-col" id="assinaturas">
+            <div class="flex flex-col lg:flex-row gap-8 w-auto lg:justify-around font-konkhmer">
+                <div class="flex flex-col lg:flex-row gap-8" id="card">
+                    <div class="w-56 lg:w-64 h-full bg-red-500 rounded-xl flex flex-col" id="assinaturas">
                         <div class="flex flex-col items-center p-4 text-white">
                             <h1 class="text-xl">Diária</h1>
                             <h1 class="text-5xl">R$44,90</h1>
                             <h1 class="text-base">à vista</h1>
                         </div>
-                        <div class="w-full bg-fundo h-full p-4 rounded-b-lg text-black font-semibold">
-                            <p class="text-base lg:text-base">acesso à área de musculação;</p>
-                            <p class="text-sm lg:text-base">acesso à área de cardio;</p>
-                            <p class="text-sm lg:text-base">acesso à área de lazer.</p>
+                        <div class="w-full bg-fundo h-full p-4 rounded-b-lg">
+                            <div class="flex gap-2">
+                                <img src="assets/Icones/Check.svg" alt="" class="h-5 mt-1">
+                                <p class="text-sm lg:text-base">acesso à área de musculação;</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="assets/Icones/Check.svg" alt="" class="h-5 mt-1">
+                                <p class="text-sm lg:text-base">acesso à área de cardio;</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="assets/Icones/Check.svg" alt="" class="h-5 mt-1">
+                                <p class="text-sm lg:text-base">acesso à área de lazer.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col lg:flex-row gap-8">
-                    <div class="w-56 lg:w-64 bg-red-500 h-96 rounded-xl flex flex-col" id="assinaturas">
+                <div class="flex flex-col lg:flex-row gap-8" id="card">
+                    <div class="w-56 lg:w-64 h-full bg-red-500 rounded-xl flex flex-col" id="assinaturas">
                         <div class="flex flex-col items-center p-4 text-white">
                             <h1 class="text-xl">Mensal</h1>
                             <h1 class="text-5xl">R$449,90</h1>
                             <h1 class="text-base">à vista</h1>
                         </div>
-                        <div class="w-full bg-fundo h-full p-4 rounded-b-lg font-semibold">
-                            <p class="text-sm lg:text-base">acesso à todas as áreas da academia (musculação, cardio, lazer, piscina, SPA, massoterapia) ;</p>
-                            <p class="text-sm lg:text-base">acompanhamento individual feito por um personal.</p>
+                        <div class="w-full bg-fundo h-full p-4 rounded-b-lg">
+                            <div class="flex gap-2">
+                                <img src="assets/Icones/Check.svg" alt="" class="h-5 mt-1">
+                                <p class="text-sm lg:text-base">acesso à todas as áreas da academia (musculação, cardio, lazer, piscina, SPA, massoterapia)</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="assets/Icones/Check.svg" alt="" class="h-5 mt-1">
+                                <p class="text-sm lg:text-base">acompanhamento individual feito por um personal.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col lg:flex-row gap-8">
-                    <div class="w-56 lg:w-64 bg-red-500 h-96 rounded-xl flex flex-col" id="assinaturas">
+                <div class="flex flex-col lg:flex-row gap-8" id="card">
+                    <div class="w-56 lg:w-64 h-full bg-red-500 rounded-xl flex flex-col" id="assinaturas">
                         <div class="flex flex-col items-center p-4 text-white">
                             <h1 class="text-xl">Anual</h1>
                             <h1 class="text-5xl">R$3.800</h1>
                             <h1 class="text-base">à vista</h1>
                         </div>
-                        <div class="w-full bg-fundo h-full p-4 rounded-b-lg font-semibold">
-                            <p class="text-sm lg:text-base">acesso à todas as áreas da academia (musculação, cardio, lazer, piscina, SPA, massoterapia);</p>
-                            <p class="text-sm lg:text-base">acompanhamento individual feito por um personal;</p>
-                            <p class="text-sm lg:text-base">acompanhamento de um nutricionista.</p>
+                        <div class="w-full bg-fundo h-full p-4 rounded-b-lg">
+                            <div class="flex gap-2">
+                                <img src="assets/Icones/Check.svg" alt="" class="h-5 mt-1" c>
+                                <p class="text-sm lg:text-base">acesso à todas as áreas da academia (musculação, cardio, lazer, piscina, SPA, massoterapia)</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="assets/Icones/Check.svg" alt="" class="h-5 mt-1">
+                                <p class="text-sm lg:text-base">acompanhamento individual feito por um personal.</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="assets/Icones/Check.svg" alt="" class="h-5 mt-1">
+                                <p class="text-sm lg:text-base">acompanhamento de um nutricionista.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
