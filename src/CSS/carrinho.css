@@ -194,7 +194,7 @@ button:hover {
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .tudo-loja {
     flex-direction: column;
     gap: 20px;
@@ -224,6 +224,42 @@ button:hover {
   }
 
   .resumo-info-loja p {
+    font-size: 14px;
+  }
+}
+
+.quinhentos{
+  display: none;
+}
+
+@media (max-width: 550px) {
+  .cabecalho-loja, .item-loja {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .quinhentos{
+    display: block;
+    background-color: #EAEAEA;
+    width: 100%;
+  }
+
+  .cabecalho-loja{
+    display: none;
+  }
+
+  .produto-info-loja {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .produto-info-loja img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .preco-loja, .quantidade-loja, .total-loja {
+    margin-top: 10px;
     font-size: 14px;
   }
 }
