@@ -46,10 +46,12 @@ document.querySelector('.aplicar-cupom').addEventListener('click', () => {
     console.log(inputCupom.value);
 
     if (cupons.includes(inputCupom.value)) {
-        const totalElement = document.querySelector('.total-loja span');
-        let calcular_total = parseFloat(totalElement.textContent.replace('R$', '').replace(',', '.'));
+        const subtotalElement = document.querySelector('.subtotal-loja span');
+        let calcular_total = parseFloat(subtotalElement.textContent.replace('R$', '').replace(',', '.'));
 
         let desconto = calcular_total * 0.10;
+
+        const totalElement = document.querySelector('.total-loja span');
 
         totalElement.textContent = `R$${(calcular_total - desconto).toFixed(2).replace('.', ',')}`;
 
