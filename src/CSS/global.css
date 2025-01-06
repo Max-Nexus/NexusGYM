@@ -1,6 +1,11 @@
 @import url(../Components/footer.css);
 @import url(../Components/header.css);
 
+@font-face {
+    font-family: 'Konkhmer';
+    src: url(../../assets/Font/KonkhmerSleokchher-Regular.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
