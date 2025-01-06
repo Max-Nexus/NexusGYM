@@ -1,6 +1,5 @@
 #searchbar{
     background-color: gray;
-    /* width: 700px; */
     border-radius: 20px;
 }
 
@@ -15,9 +14,5 @@
     margin-left: -16px;
     border-top: 2px solid white;
     margin-top: 27px;
-    padding: 10px;
-}
-
-#links{
-    margin-top: 1rem;
+    padding: 14px;
 }
