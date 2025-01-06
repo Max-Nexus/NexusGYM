@@ -6,6 +6,11 @@
     src: url(../../assets/Font/KonkhmerSleokchher-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url(../../assets/Font/Poppins-Regular.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -14,4 +19,8 @@
 
 body{
     background-color: white;
+}
+
+header{
+    font-family: 'Poppins', sans-serif;
 }
