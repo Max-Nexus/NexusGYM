@@ -13,7 +13,7 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 - **Tailwind CSS**: Framework de utilitários para estilização rápida e responsiva.
 - **JavaScript**: Interatividade e funcionalidades dinâmicas do site.
 
-## Funcionalidades
+## Páginas
 
 - **Home**
 - **Aparelhos**
